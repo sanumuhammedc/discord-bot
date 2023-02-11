@@ -8,7 +8,7 @@ try:
     connection = mysql.connector.connect(host='localhost',
                                          database='bot',
                                          user='discord',
-                                         password='Asdf@123')
+                                         password='passwordhere')
     if connection.is_connected():
         db_Info = connection.get_server_info()
         cursor = connection.cursor()
@@ -92,4 +92,4 @@ async def fetch(context):
         await context.channel.send('You are not authorized to view users')  
 
 
-client.run('MTA3MzcwNzAyOTc1NzE3Nzg1Nw.GsS6IU.z1Ma5J6SHW94CdXbgIwzqolf5TEQqyLBGftOYk')
+client.run('token here')
